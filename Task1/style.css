@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: serif;
+    font-weight: 200;
+    font-style: italic;
+    background-color: #000000;
+    color: white;
+}
+.container {
+    width: 100%;
+    max-width: 1800px;
+    height: 100vh;
+    margin: auto;
+    padding: 30px;
+}
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 30px 0;
+}
+.icons {
+    order: 1; 
+    margin-left: auto; 
+    margin-top: 10px; 
+}
+.icons ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; 
+}
+.icons ul li {
+    display: inline-block;
+}
+.icons ul li a {
+    text-decoration: none;
+    color: white;
+}
+.branding {
+    order: 2; 
+    text-align: center;
+    margin-top: 10px; 
+}
+.logo {
+    font-size: 120px;
+    font-style: normal;
+    color: goldenrod;
+    margin-bottom: 0px;
+}
+.tag {
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 0.2;
+    margin-bottom: 20px;
+}
+.other {
+    order: 3; 
+    margin-top: 20px; 
+}
+.other ul {
+    list-style: none;
+    display: flex;
+    gap: 100px; 
+    justify-content: center; 
+}
+.other ul li {
+    font-size: 23px;
+}
+.other ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.other ul li a:hover {
+    color: #756868; 
+}
+.main {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 55px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 23px;
+ text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 25px;
+}
+.main-content {
+    max-width: 50%;
+}
+.main-content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 40px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+.search-box input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1;
+}
+.search-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #190773;
+    color: white;
+    cursor: pointer;
+}
+.search-box button:hover {
+    background-color: #4da8da; 
+}
+.image-content-1{
+   max-width: 100%;
+   height: auto;
+   padding: 0px;
+   margin: 0px; 
+   border-radius: 20px;
+}
+/* Adjustments for tablet screens */
+@media only screen and (max-width: 1024px) { 
+    .icons ul {
+        gap: 15px; 
+    }
+    .other ul {
+        gap: 15px; 
+    }
+    .main-content {
+        max-width: 70%; 
+    }
+    .image-content-1 {
+        max-width: 60%; 
+    }
+}
+/* Adjustments for mobile screens */
+@media only screen and (max-width: 768px) {
+    #responsive-image {
+        content: url('model.jpg'); 
+        width: 100%; 
+        height: 100%; 
+        display: block; 
+        margin: 5px auto; 
+    }
+    .icons {
+        margin-left: 0; 
+        justify-content: flex-start; 
+        margin-top: 5px; 
+    }
+    .icons ul {
+        gap: 10px; 
+    }
+    .logo{
+        font-size: 100px;
+    }
+    .other ul {
+        gap: 10px; 
+    }
+    .other ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 11.5px;
+        margin-bottom: 0px;
+    }
+    .main-content h1 {
+        font-size: 23px; 
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100px;
+        font-style: normal;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    .tag {
+        font-size: 16px; 
+    }
+    .other ul li {
+        font-size: 18px;
+    }
+    .search-box input[type="text"] {
+        padding: 8px; 
+        font-size: 12px; 
+        max-width: 100%; 
+    }
+    .search-box button {
+        padding: 8px; 
+        font-size: 10px; 
+    }
+    .content {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .image-content-1 {
+        order: 2; 
+    }
+    .search-box {
+        order: 1; 
+    }   
+}
