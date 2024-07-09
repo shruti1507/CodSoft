@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    margin: auto;
+
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.button a {
+    text-decoration: none;
+    color: #6E07F3;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+
+}
+
+.button {
+    padding: 9px 12px;
+    border: 2px solid #6E07F3;
+    border-radius: 9999px;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    top: -36px;
+    margin-right: 70px;
+}
+
+.button:hover {
+    background-color: #6E07F3;
+}
+
+.button:hover a {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.hero {
+    margin-left: 6%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 20px;
+
+}
+
+.hero span {
+    color: #6E07F3;
+}
+
+.hero div {
+    font-size: 24px;
+    line-height: 2;
+}
+
+.hero .img {
+    display: inline-block;
+    position: absolute;
+    left: 1008px;
+    top: 176px;
+
+}
+
+.main .btn {
+    padding: 15px 16px;
+    border: 2px solid #6E07F3;
+    border-radius: 9999px;
+    background-color: white;
+    background-color: #6E07F3;
+    position: relative;
+    top: 50px;
+    margin-left: 90px;
+}
+
+.main .btn a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main .btn:hover {
+    background-color: white;
+}
+
+.main .btn:hover a {
+    color: #6E07F3;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 78vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.first .secimg {
+    position: relative;
+    top: 75px;
+
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #6E07F3;
+}
+
+.first div span {
+    font-size: 24px;
+}
+
+.first h2 {
+    font-size: 48px;
+    color: #6E07F3;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.second h2 {
+    font-size: 48px;
+    color: #6E07F3;
+
+    z-index: 1;
+}
+
+.second img {
+    position: relative;
+    top: 100px;
+}
+
+.third {
+    display: flex;
+    position: relative;
+    top: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+.third h2 {
+    color: #6E07F3;
+    font-size: 48px;
+}
+
+.content .box {
+    border: 2px solid rgb(131, 126, 126);
+    height: 262px;
+    width: 400px;
+    margin-top: 50px;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 10px 10px gray;
+    border-radius: 4px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: relative;
+    top: 180px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content .box h3 {
+    color: #6E07F3;
+    font-size: 24px;
+    text-align: center;
+}
+
+.fourth {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.fourth .box {
+    height: 40vh;
+    width: 100%;
+    margin-top: 220px;
+    position: relative;
+    background-color: #6E07F3;
+}
+
+.fourth .box img {
+    margin: 14px 22px;
+    padding-left: 30px;
+    margin-left: 40px;
+    position: relative;
+
+
+}
+
+.fourth .box div p {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    padding: 14px 200px;
+    margin-left: 300px;
+    z-index: 1;
+    top: 60px;
+}
+
+.mywork {
+    font-size: 48px;
+    color: #6E07F3;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fifth {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 10px 20px 60px;
+}
+
+.fifth .box img {
+    border-radius: 8px;
+    transition: filter 0.3s ease-in-out;
+
+}
+
+.fifth .box img:hover {
+    filter: grayscale(100%);
+}
+
+.fifth .box {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.fifth .box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black overlay */
+    opacity: 0;
+    /* initially hidden */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.fifth .box:hover .overlay {
+    opacity: 1;
+    /* show overlay on hover */
+}
+
+.fifth .box .overlay-text {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.sixth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sixth .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.sixth h2 {
+    color: #6E07F3;
+    font-size: 48px;
+}
+
+.sixth .para {
+    font-size: 32px;
+    margin-left: 180px;
+    padding-left: 180px;
+    position: relative;
+    top: -50px;
+
+}
+
+.sixth .imgtag {
+    margin-left: 180px;
+    padding-left: 180px;
+    display: flex;
+    gap: 30px;
+}
+
+.sixth .header img {
+    position: relative;
+    top: 50px;
+}
+
+footer {
+    background-color: #6E07F3;
+    padding: 100px 0px;
+}
+
+footer .text {
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+footer .copyright {
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer .copyright span {
+    color: white;
+    position: relative;
+    top: -10px;
+    padding-left: 20px;
+}
